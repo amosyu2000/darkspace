@@ -1,53 +1,70 @@
 html
 	/* Color */
-	$color-text-1: white
-	$color-text-2: #dcddde
-	$color-text-3: #8e9297
-	$color-link: #00b0ee
-	$color-icon: #b9bbbe
-	$color-button: #7289da
+	$color-text-1: rgb(255, 255, 255)
+	$color-text-2: rgb(220, 221, 222)
+	$color-text-3: rgb(142, 146, 151)
+	$color-link: rgb(0, 176, 238)
+	$color-icon: rgb(185, 187, 190)
+	$color-button: rgb(114, 137, 218)
 
-	.d2l
-		:host
-			color: $color-button
-		&-widget-header .d2l-heading,
-		&-tab-text
-			color: $color-text-2
-			&:hover
+	.d2l-widget-header .d2l-heading,
+	.d2l-tab-text
+		color: $color-text-2
+		&:hover
+			color: $color-text-1
+			border-bottom: none
+	.d2l-typography
+		color: $color-text-3
+		line-height: 1.2rem
+		.d2l-body-small
+			color:$color-text-2
+	.d2l-msg-container-text
+		color: $color-text-3
+	.d2l-page-header
+		color: $color-text-1
+	.d2l-widget-header .d2l-homepage-heading-link
+		&:hover,
+		&:focus,
+		&:active
+			text-decoration: none
+	.d2l-branding-navigation-dark-foreground-color
+		a.d2l-navigation-s-link 
+			&:link,
+			&:visited
+				color: $color-text-3
+				border-bottom: none
+			&:hover,
+			&:active
 				color: $color-text-1
 				border-bottom: none
-		&-typography
+		div.d2l-navigation-s-item>span,
+		.d2l-navigation-s-group .d2l-navigation-s-group-text, 
+		.d2l-navigation-s-group .d2l-navigation-s-group-wrapper d2l-icon
 			color: $color-text-3
-			line-height: 1.2rem
-		&-msg-container-text
-			color: $color-text-3
-		&-page-header
+	.d2l-navigation-s-linkarea-no-color
+		.d2l-navigation-s-group:focus,
+		.d2l-navigation-s-group:hover
+			.d2l-navigation-s-group-text,
+			.d2l-navigation-s-group-wrapper d2l-icon
+				color: $color-text-1
+				border-bottom: none
+	.d2l-link
+		&,
+		&:active, 
+		&:link, 
+		&:visited
+			color: $color-link
+	.d2l-htmlblock a
+		&,
+		&:active, 
+		&:link, 
+		&:visited
+			color: $color-link !important
+	.d2l-tab-text
+		color: $color-text-3
+		&:hover
 			color: $color-text-1
-		&-widget-header .d2l-homepage-heading-link
-			&:hover,
-			&:focus
-				text-decoration: none
-		&-branding-navigation-dark-foreground-color
-			a.d2l-navigation-s-link 
-				&:link,
-				&:visited
-					color: $color-text-3
-				&:hover
-					color: $color-text-1
-					border-bottom: none
-			div.d2l-navigation-s-item>span,
-			.d2l-navigation-s-group .d2l-navigation-s-group-text, 
-			.d2l-navigation-s-group .d2l-navigation-s-group-wrapper d2l-icon
-				color: $color-text-3
-		&-link
-			&,
-			&:active, 
-			&:link, 
-			&:visited
-				color: $color-link
-		&-htmlblock a
-			&,
-			&:active, 
-			&:link, 
-			&:visited
-				color: $color-link !important
+	.d2l-textblock
+		color: $color-text-2
+		&:hover
+			color: $color-text-1

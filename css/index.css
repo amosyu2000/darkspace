@@ -1,50 +1,93 @@
 html {
   /* Color */
+  /* Left sidebar in Content */
 }
-html .d2l-tiles-container, html .d2l-body {
-  background-color: #36393f;
+html ::-webkit-scrollbar {
+  width: 8px;
+}
+html ::-webkit-scrollbar-track {
+  background: #2e3338;
+}
+html ::-webkit-scrollbar-thumb, html ::-webkit-scrollbar-thumb:hover {
+  background: #202225;
+  border-radius: 4px;
+}
+html .d2l-tiles-container,
+html .d2l-body {
+  background: #36393f;
 }
 html .d2l-branding-navigation-background-color {
-  background-color: #2f3136;
+  background: #2f3136;
   border: 1px solid #202225;
 }
 html .d2l-tile {
-  background-color: #2f3136;
+  background: #2f3136;
   border: 1px solid #202225;
 }
-html .d2l-widget-header .d2l-heading {
-  background-color: transparent;
+html .d2l-widget-header .d2l .d2l-heading {
+  background: rgba(0, 0, 0, 0);
 }
 html .d2l-navigation-s {
-  background-color: #202225;
+  background: #202225;
 }
 html .d2l-navigation-link-top-border {
-  background-color: red;
+  background: red;
 }
 html .d2l-msg-container-text {
-  background-color: #2f3136;
+  background: #2f3136;
 }
-html .d2l-twopanelselector-side-bg .d2l-twopanelselector-side-sep, html .d2l-twopanelselector-side .d2l-twopanelselector-side-sep {
-  background: blue;
+html .d2l-fileviewer-pdf-pdfjs {
+  border: 1px solid #202225;
+}
+html .d2l-tabs-layout {
+  border-bottom: 1px solid #202225;
+}
+html .d2l-twopanelselector-side-bg.d2l-twopanelselector-side-sep,
+html .d2l-twopanelselector-side.d2l-twopanelselector-side-sep {
+  background: #2f3136;
+  border-left: 1px solid #202225;
+  border-right: 1px solid #202225;
 }
 html .daylight .d2l-msg-container {
-  background-color: #2f3136;
+  background: #2f3136;
   border: none;
 }
+html .daylight .d2l-collapsepane .d2l-collapsepane-header {
+  border: 1px solid #202225;
+  background: rgba(0, 0, 0, 0.2);
+}
+html .daylight .d2l-collapsepane .d2l-collapsepane-content,
+html .daylight .d2l-collapsepane .d2l-collapsepane-header.d2l-collapsepane-collapsed {
+  border-left: 1px solid #202225;
+  border-right: 1px solid #202225;
+  border-bottom: 1px solid #202225;
+  background: rgba(0, 0, 0, 0.2);
+}
+html .daylight #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor::before, html .daylight #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:link::before, html .daylight #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:visited::before, html .daylight #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:hover::before, html .daylight #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:focus::before {
+  background: rgba(0, 0, 0, 0.2);
+}
+html .daylight #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor::after, html .daylight #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:link::after, html .daylight #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:visited::after, html .daylight #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:hover::after, html .daylight #ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor:focus::after {
+  display: none;
+}
+html .daylight #D2L_LE_Content_TreeBrowser .d2l-le-TreeAccordionItem {
+  border-top: 1px solid #202225;
+}
 html .homepage-col-4 div {
-  background-color: #202225;
+  background: #202225;
+}
+html .vui-list > li {
+  border-top: 1px solid #202225;
 }
 
 html {
   /* Color */
 }
-html .d2l :host {
-  color: #7289da;
-}
-html .d2l-widget-header .d2l-heading, html .d2l-tab-text {
+html .d2l-widget-header .d2l-heading,
+html .d2l-tab-text {
   color: #dcddde;
 }
-html .d2l-widget-header .d2l-heading:hover, html .d2l-tab-text:hover {
+html .d2l-widget-header .d2l-heading:hover,
+html .d2l-tab-text:hover {
   color: white;
   border-bottom: none;
 }
@@ -52,19 +95,23 @@ html .d2l-typography {
   color: #8e9297;
   line-height: 1.2rem;
 }
+html .d2l-typography .d2l-body-small {
+  color: #dcddde;
+}
 html .d2l-msg-container-text {
   color: #8e9297;
 }
 html .d2l-page-header {
   color: white;
 }
-html .d2l-widget-header .d2l-homepage-heading-link:hover, html .d2l-widget-header .d2l-homepage-heading-link:focus {
+html .d2l-widget-header .d2l-homepage-heading-link:hover, html .d2l-widget-header .d2l-homepage-heading-link:focus, html .d2l-widget-header .d2l-homepage-heading-link:active {
   text-decoration: none;
 }
 html .d2l-branding-navigation-dark-foreground-color a.d2l-navigation-s-link:link, html .d2l-branding-navigation-dark-foreground-color a.d2l-navigation-s-link:visited {
   color: #8e9297;
+  border-bottom: none;
 }
-html .d2l-branding-navigation-dark-foreground-color a.d2l-navigation-s-link:hover {
+html .d2l-branding-navigation-dark-foreground-color a.d2l-navigation-s-link:hover, html .d2l-branding-navigation-dark-foreground-color a.d2l-navigation-s-link:active {
   color: white;
   border-bottom: none;
 }
@@ -73,11 +120,30 @@ html .d2l-branding-navigation-dark-foreground-color .d2l-navigation-s-group .d2l
 html .d2l-branding-navigation-dark-foreground-color .d2l-navigation-s-group .d2l-navigation-s-group-wrapper d2l-icon {
   color: #8e9297;
 }
+html .d2l-navigation-s-linkarea-no-color .d2l-navigation-s-group:focus .d2l-navigation-s-group-text,
+html .d2l-navigation-s-linkarea-no-color .d2l-navigation-s-group:focus .d2l-navigation-s-group-wrapper d2l-icon,
+html .d2l-navigation-s-linkarea-no-color .d2l-navigation-s-group:hover .d2l-navigation-s-group-text,
+html .d2l-navigation-s-linkarea-no-color .d2l-navigation-s-group:hover .d2l-navigation-s-group-wrapper d2l-icon {
+  color: white;
+  border-bottom: none;
+}
 html .d2l-link, html .d2l-link:active, html .d2l-link:link, html .d2l-link:visited {
   color: #00b0ee;
 }
 html .d2l-htmlblock a, html .d2l-htmlblock a:active, html .d2l-htmlblock a:link, html .d2l-htmlblock a:visited {
   color: #00b0ee !important;
+}
+html .d2l-tab-text {
+  color: #8e9297;
+}
+html .d2l-tab-text:hover {
+  color: white;
+}
+html .d2l-textblock {
+  color: #dcddde;
+}
+html .d2l-textblock:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

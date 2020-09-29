@@ -1,41 +1,85 @@
 html
 	/* Color */
-	$color-bg-none: transparent
-	$color-bg-1: #36393f
-	$color-bg-2: #2f3136
-	$color-bg-3: #202225
-	$color-border: 1px solid #202225
-	$color-button: #7289da
-	$color-scroll-handle: #202225
-	$color-scroll-bar: #2e3338
+	$color-bg-none: rgba(0, 0, 0, 0)
+	$color-bg-overlay: rgba(0, 0, 0, 0.2)
+	$color-bg-1: rgb(54, 57, 63)
+	$color-bg-2: rgb(47, 49, 54)
+	$color-bg-3: rgb(32, 34, 37)
+	$color-border: 1px solid rgb(32, 34, 37)
+	$color-button: rgb(114, 137, 218)
+	$color-scroll-thumb: rgb(32, 34, 37)
+	$color-scroll-track: rgb(46, 51, 56)
 
-	.d2l
-		&-tiles-container,
-		&-body
-			background-color: $color-bg-1
-		&-branding-navigation-background-color
-			background-color: $color-bg-2
-			border: $color-border
-		&-tile
-			background-color: $color-bg-2
-			border: $color-border
-		&-widget-header .d2l-heading
-			background-color: $color-bg-none
-		&-navigation-s
-			background-color: $color-bg-3
-		&-navigation-link-top-border
-			background-color: red
-		&-msg-container-text
-			background-color: $color-bg-2
-		&-twopanelselector-side-bg, 
-		&-twopanelselector-side
-			.d2l-twopanelselector-side-sep
-				background: blue
+	::-webkit-scrollbar
+		width: 8px
+	::-webkit-scrollbar-track 
+		background: $color-scroll-track
+	::-webkit-scrollbar-thumb
+		&,
+		&:hover
+			background: $color-scroll-thumb
+			border-radius: 4px
 
-	.daylight .d2l 
-		&-msg-container
-			background-color: $color-bg-2
+	.d2l-tiles-container,
+	.d2l-body
+		background: $color-bg-1
+	.d2l-branding-navigation-background-color
+		background: $color-bg-2
+		border: $color-border
+	.d2l-tile
+		background: $color-bg-2
+		border: $color-border
+	.d2l-widget-header .d2l
+		.d2l-heading
+			background: $color-bg-none
+	.d2l-navigation-s
+		background: $color-bg-3
+	.d2l-navigation-link-top-border
+		background: red
+	.d2l-msg-container-text
+		background: $color-bg-2
+	.d2l-fileviewer-pdf-pdfjs
+		border: $color-border
+	.d2l-tabs-layout
+		border-bottom: $color-border
+	/* Left sidebar in Content */
+	.d2l-twopanelselector-side-bg,
+	.d2l-twopanelselector-side
+		&.d2l-twopanelselector-side-sep
+			background: $color-bg-2
+			border-left: $color-border
+			border-right: $color-border
+
+
+	.daylight
+		.d2l-msg-container
+			background: $color-bg-2
 			border: none
+		.d2l-collapsepane
+			.d2l-collapsepane-header
+				border: $color-border
+				background: $color-bg-overlay
+			.d2l-collapsepane-content,
+			.d2l-collapsepane-header.d2l-collapsepane-collapsed
+				border-left: $color-border
+				border-right: $color-border
+				border-bottom: $color-border
+				background: $color-bg-overlay
+		#ContentModuleTree .d2l-le-TreeAccordionItem.d2l-le-TreeAccordionItem-Selected > a.d2l-le-TreeAccordionItem-anchor
+			&, 
+			&:link, 
+			&:visited, 
+			&:hover, 
+			&:focus
+				&::before
+					background: $color-bg-overlay
+				&::after
+					display: none
+		#D2L_LE_Content_TreeBrowser .d2l-le-TreeAccordionItem
+			border-top: $color-border
 
 	.homepage-col-4 div
-		background-color: $color-bg-3
+		background: $color-bg-3
+
+	.vui-list>li
+		border-top: $color-border

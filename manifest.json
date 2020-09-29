@@ -1,16 +1,16 @@
 {
 	"manifest_version": 2,
-	"name": "__MSG_appName__",
+	"name": "__MSG_extName__",
 	"version": "1.0",
 	"default_locale": "en",
-	"description": "__MSG_appDescription__",
+	"description": "__MSG_extDescription__",
 	"permissions": [
 		"activeTab"
 	],
 	"page_action": {
 		"default_icon": "images/logo.png",
 		"default_popup": "popup.html",
-		"default_title": "__MSG_appName__"
+		"default_title": "__MSG_extName__"
 	},
 	"icons": {
 		"16": "images/logo.png"

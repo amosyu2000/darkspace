@@ -1,10 +1,10 @@
 {
-	"appName": {
-		"message": "D2L Dark",
-		"description": "The title of the application."
+	"extName": {
+		"message": "Darkspace",
+		"description": "The title of the extension."
 	},
-	"appDescription": {
-		"message": "A Chrome extension that adds dark mode to D2L-based applications.",
-		"description": "The description of the application."
+	"extDescription": {
+		"message": "A Chrome extension that brings a dark theme to Brightspace-based applications.",
+		"description": "The description of the extension."
 	}
 }

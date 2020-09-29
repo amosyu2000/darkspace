@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "__MSG_appName__",
+	"version": "1.0",
+	"default_locale": "en",
+	"description": "__MSG_appDescription__",
+	"permissions": [
+		"activeTab"
+	],
+	"page_action": {
+		"default_icon": "images/logo.png",
+		"default_popup": "popup.html",
+		"default_title": "__MSG_appName__"
+	},
+	"icons": {
+		"16": "images/logo.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://avenue.cllmcmaster.ca/d2l/*"],
+			"css": ["css/index.css"]
+		}
+	]
+}

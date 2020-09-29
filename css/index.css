@@ -1,0 +1,35 @@
+html {
+  /* Color */
+}
+html :host {
+  color: #7289da;
+}
+html .d2l-tiles-container,
+html .d2l-body {
+  background-color: #2f3136;
+}
+html .d2l-branding-navigation-background-color {
+  background-color: #202225;
+}
+html .d2l-tile {
+  background-color: #36393f;
+}
+html .d2l-heading {
+  color: white;
+}
+html .d2l-typography {
+  color: #dcddde;
+}
+html .d2l-navigation-s {
+  background-color: #202225;
+}
+html .d2l-branding-navigation-dark-foreground-color a.d2l-navigation-s-link,
+html .d2l-branding-navigation-dark-foreground-color a.d2l-navigation-s-link:link,
+html .d2l-branding-navigation-dark-foreground-color a.d2l-navigation-s-link:visited,
+html .d2l-branding-navigation-dark-foreground-color div.d2l-navigation-s-item > span,
+html .d2l-branding-navigation-dark-foreground-color .d2l-navigation-s-group .d2l-navigation-s-group-text,
+html .d2l-branding-navigation-dark-foreground-color .d2l-navigation-s-group .d2l-navigation-s-group-wrapper d2l-icon {
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

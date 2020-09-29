@@ -1,0 +1,48 @@
+html {
+	/* Color */
+	$color-bg-1: #36393f;
+	$color-bg-2: #2f3136;
+	$color-bg-3: #202225;
+	$color-text-1: white;
+	$color-text-2: #dcddde;
+	$color-text-3: #8e9297;
+	$color-border: #202225;
+	$color-link: #00b0ee;
+	$color-icon: #b9bbbe;
+	$color-button: #7289da;
+	$color-scroll-handle: #202225;
+	$color-scroll-bar: #2e3338;
+
+	:host {
+		color: $color-button;
+	}
+	.d2l-tiles-container,
+	.d2l-body {
+		background-color: $color-bg-2;
+	}
+	.d2l-branding-navigation-background-color {
+		background-color: $color-bg-3;
+	}
+	.d2l-tile {
+		background-color: $color-bg-1;
+	}
+	.d2l-heading {
+		color: $color-text-1;
+	}
+	.d2l-typography {
+		color: $color-text-2;
+	}
+	.d2l-navigation-s {
+		background-color: $color-bg-3;
+	}
+	.d2l-branding-navigation-dark-foreground-color {
+		a.d2l-navigation-s-link, 
+		a.d2l-navigation-s-link:link,
+		a.d2l-navigation-s-link:visited,
+		div.d2l-navigation-s-item>span,
+		.d2l-navigation-s-group .d2l-navigation-s-group-text, 
+		.d2l-navigation-s-group .d2l-navigation-s-group-wrapper d2l-icon {
+			color: $color-text-1;
+		}
+	}
+}

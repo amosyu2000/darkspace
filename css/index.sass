@@ -1,0 +1,63 @@
+html
+	/* Color */
+	$color-bg-1: #36393f
+	$color-bg-2: #2f3136
+	$color-bg-3: #202225
+	$color-text-1: white
+	$color-text-2: #dcddde
+	$color-text-3: #8e9297
+	$color-border: #202225
+	$color-link: #00b0ee
+	$color-icon: #b9bbbe
+	$color-button: #7289da
+	$color-scroll-handle: #202225
+	$color-scroll-bar: #2e3338
+
+	.d2l
+		:host
+			color: $color-button
+		&-tiles-container,
+		&-body
+			background-color: $color-bg-1
+		&-branding-navigation-background-color
+			background-color: $color-bg-2
+		&-tile
+			background-color: $color-bg-2
+		&-widget-header .d2l-heading,
+		&-tab-text
+			color: $color-text-1
+		&-typography
+			color: $color-text-3
+			line-height: 1.2rem
+		&-navigation-s
+			background-color: $color-bg-3
+		&-msg-container-text
+			background-color: $color-bg-2
+			color: $color-text-2
+		&-branding-navigation-dark-foreground-color
+			a.d2l-navigation-s-link, 
+			a.d2l-navigation-s-link:link,
+			a.d2l-navigation-s-link:visited,
+			div.d2l-navigation-s-item>span,
+			.d2l-navigation-s-group .d2l-navigation-s-group-text, 
+			.d2l-navigation-s-group .d2l-navigation-s-group-wrapper d2l-icon
+				color: $color-text-1
+		&-link
+			&,
+			&:active, 
+			&:link, 
+			&:visited
+				color: $color-link
+		&-htmlblock a
+			&,
+			&:active, 
+			&:link, 
+			&:visited
+				color: $color-link !important
+		&-twopanelselector-side-bg, 
+		&-twopanelselector-side
+			.d2l-twopanelselector-side-sep
+				background: blue
+
+	.homepage-col-4 div
+		background-color: $color-bg-3

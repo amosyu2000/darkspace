@@ -1,1 +1,1 @@
-start cmd /k sass --watch css/index.scss:css/index.css
+start cmd /k sass --watch css/index.sass:css/index.css

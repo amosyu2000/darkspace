@@ -1,27 +1,31 @@
 html {
   /* Color */
 }
-html :host {
+html .d2l :host {
   color: #7289da;
 }
-html .d2l-tiles-container,
-html .d2l-body {
-  background-color: #2f3136;
-}
-html .d2l-branding-navigation-background-color {
-  background-color: #202225;
-}
-html .d2l-tile {
+html .d2l-tiles-container, html .d2l-body {
   background-color: #36393f;
 }
-html .d2l-heading {
+html .d2l-branding-navigation-background-color {
+  background-color: #2f3136;
+}
+html .d2l-tile {
+  background-color: #2f3136;
+}
+html .d2l-widget-header .d2l-heading, html .d2l-tab-text {
   color: white;
 }
 html .d2l-typography {
-  color: #dcddde;
+  color: #8e9297;
+  line-height: 1.2rem;
 }
 html .d2l-navigation-s {
   background-color: #202225;
+}
+html .d2l-msg-container-text {
+  background-color: #2f3136;
+  color: #dcddde;
 }
 html .d2l-branding-navigation-dark-foreground-color a.d2l-navigation-s-link,
 html .d2l-branding-navigation-dark-foreground-color a.d2l-navigation-s-link:link,
@@ -30,6 +34,18 @@ html .d2l-branding-navigation-dark-foreground-color div.d2l-navigation-s-item > 
 html .d2l-branding-navigation-dark-foreground-color .d2l-navigation-s-group .d2l-navigation-s-group-text,
 html .d2l-branding-navigation-dark-foreground-color .d2l-navigation-s-group .d2l-navigation-s-group-wrapper d2l-icon {
   color: white;
+}
+html .d2l-link, html .d2l-link:active, html .d2l-link:link, html .d2l-link:visited {
+  color: #00b0ee;
+}
+html .d2l-htmlblock a, html .d2l-htmlblock a:active, html .d2l-htmlblock a:link, html .d2l-htmlblock a:visited {
+  color: #00b0ee !important;
+}
+html .d2l-twopanelselector-side-bg .d2l-twopanelselector-side-sep, html .d2l-twopanelselector-side .d2l-twopanelselector-side-sep {
+  background: blue;
+}
+html .homepage-col-4 div {
+  background-color: #202225;
 }
 
 /*# sourceMappingURL=index.css.map */

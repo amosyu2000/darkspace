@@ -1,0 +1,53 @@
+html
+	/* Color */
+	$color-text-1: white
+	$color-text-2: #dcddde
+	$color-text-3: #8e9297
+	$color-link: #00b0ee
+	$color-icon: #b9bbbe
+	$color-button: #7289da
+
+	.d2l
+		:host
+			color: $color-button
+		&-widget-header .d2l-heading,
+		&-tab-text
+			color: $color-text-2
+			&:hover
+				color: $color-text-1
+				border-bottom: none
+		&-typography
+			color: $color-text-3
+			line-height: 1.2rem
+		&-msg-container-text
+			color: $color-text-3
+		&-page-header
+			color: $color-text-1
+		&-widget-header .d2l-homepage-heading-link
+			&:hover,
+			&:focus
+				text-decoration: none
+		&-branding-navigation-dark-foreground-color
+			a.d2l-navigation-s-link 
+				&:link,
+				&:visited
+					color: $color-text-3
+				&:hover
+					color: $color-text-1
+					border-bottom: none
+			div.d2l-navigation-s-item>span,
+			.d2l-navigation-s-group .d2l-navigation-s-group-text, 
+			.d2l-navigation-s-group .d2l-navigation-s-group-wrapper d2l-icon
+				color: $color-text-3
+		&-link
+			&,
+			&:active, 
+			&:link, 
+			&:visited
+				color: $color-link
+		&-htmlblock a
+			&,
+			&:active, 
+			&:link, 
+			&:visited
+				color: $color-link !important

@@ -48,6 +48,17 @@ html .d2l-twopanelselector-side.d2l-twopanelselector-side-sep {
   border-left: 1px solid #202225;
   border-right: 1px solid #202225;
 }
+html .d2l-dropdown-content-width {
+  background: #36393f;
+  border: 1px solid #202225;
+}
+@media (max-width: 1000px) {
+  html .d2l-twopanelselector-wrapper.d2l-repsonsive-collapse-layout .d2l-twopanelselector-side.d2l-twopanelselector-side-sep {
+    background: #2f3136;
+    border-top: 1px solid #202225;
+    border-bottom: 1px solid #202225;
+  }
+}
 html .daylight .d2l-msg-container {
   background: #2f3136;
   border: none;
@@ -77,6 +88,22 @@ html .homepage-col-4 div {
 }
 html .vui-list > li {
   border-top: 1px solid #202225;
+}
+html .vui-button, html .vui-button.vui-disabled:focus, html .vui-button.vui-disabled:hover, html .vui-button[disabled]:focus, html .vui-button[disabled]:hover, html .vui-button:focus, html .vui-button:hover, html .vui-button:link, html .vui-button:visited {
+  background: #7289da;
+}
+html .d2l-button-filter > ul > li > a.d2l-button-filter-selected {
+  background: #202225;
+  border: 1px solid #202225;
+}
+html .d2l-button-filter > ul > li > a.d2l-button-filter-selected:hover, html .d2l-button-filter > ul > li > a.d2l-button-filter-selected:focus {
+  box-shadow: none;
+}
+html .d2l-button-filter > ul > li > a.vui-button {
+  border: 1px solid #202225;
+}
+html .d2l-button-filter > ul > li > a.vui-button:hover:not(.d2l-button-filter-selected), html .d2l-button-filter > ul > li > a.vui-button:focus:not(.d2l-button-filter-selected) {
+  background: #5e77d4;
 }
 
 html {
@@ -144,6 +171,9 @@ html .d2l-textblock {
 }
 html .d2l-textblock:hover {
   color: white;
+}
+html .vui-button, html .vui-button.vui-disabled:focus, html .vui-button.vui-disabled:hover, html .vui-button[disabled]:focus, html .vui-button[disabled]:hover, html .vui-button:focus, html .vui-button:hover, html .vui-button:link, html .vui-button:visited {
+  color: #dcddde;
 }
 
 /*# sourceMappingURL=index.css.map */

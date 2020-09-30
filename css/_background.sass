@@ -7,6 +7,7 @@ html
 	$color-bg-3: rgb(32, 34, 37)
 	$color-border: 1px solid rgb(32, 34, 37)
 	$color-button: rgb(114, 137, 218)
+	$color-button-hover: rgb(94, 119, 212)
 	$color-scroll-thumb: rgb(32, 34, 37)
 	$color-scroll-track: rgb(46, 51, 56)
 
@@ -49,6 +50,16 @@ html
 			background: $color-bg-2
 			border-left: $color-border
 			border-right: $color-border
+	.d2l-dropdown-content-width
+		background: $color-bg-1
+		border: $color-border
+
+	@media (max-width: 1000px)
+		.d2l-twopanelselector-wrapper.d2l-repsonsive-collapse-layout
+			.d2l-twopanelselector-side.d2l-twopanelselector-side-sep
+				background: $color-bg-2
+				border-top: $color-border
+				border-bottom: $color-border
 
 
 	.daylight
@@ -83,3 +94,27 @@ html
 
 	.vui-list>li
 		border-top: $color-border
+
+	.vui-button
+		&,
+		&.vui-disabled:focus, 
+		&.vui-disabled:hover, 
+		&[disabled]:focus, 
+		&[disabled]:hover,
+		&:focus, 
+		&:hover, 
+		&:link, 
+		&:visited
+			background: $color-button
+	.d2l-button-filter > ul > li > a
+		&.d2l-button-filter-selected
+			background: $color-bg-3
+			border: $color-border
+			&:hover, 
+			&:focus
+				box-shadow: none
+		&.vui-button
+			border: $color-border
+			&:hover:not(.d2l-button-filter-selected), 
+			&:focus:not(.d2l-button-filter-selected)
+				background: $color-button-hover
